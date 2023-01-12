@@ -1,0 +1,221 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #eee;
+}
+
+.fullContainer
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.headings
+{
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.headings h1:hover
+{
+    color: white;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.headings h2:hover
+{
+    color: blue;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.headings h3:hover
+{
+    color: green;
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navigation
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    margin-left: 6px;
+}
+#nav-h1
+{
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+}
+#navbar ul
+{
+    list-style: none;
+}
+#navbar ul li
+{
+    border-bottom: 2px solid black;
+    margin: 10px;
+    font-style: italic;
+}
+code
+{
+    background-color: grey;
+    width: 600px;
+    height:fit-content;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    color: white;
+}
+#navbar
+{
+    scrollbar-width: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: solid;
+    border-color: black;
+    height: 600px;
+}
+.nav-link
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+.nav-link:hover
+{
+    color: blue;
+}
+.main-section header
+{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+#bars
+{
+    text-align: right;
+    display: none;
+}
+#cross_sign
+{
+    font-size: 30px;
+    color: red;
+    display: none;
+}
+.fa-bars
+{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+/* Footer CSS Below: */
+
+
+#Developer_Details
+{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    
+}
+
+#footer_header
+{
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+}
+.footerContainer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    width: fit-content;
+
+}
+
+
+.first
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    list-style: none;
+    
+}
+.first h2
+{
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+span
+{
+    color: brown;
+    font-size: 25px;
+    font-style: italic;
+}
+.social-connections
+{
+    margin: 10px;
+    font-size: 40px;
+}
+
+.last
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.last h4
+{
+    color: black;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 450px) {
+    .navigation{
+        display: none;
+    }
+    #Developer_Details
+{
+    width: 100vw;
+    height: 100%;
+    font-size: 25px;
+    
+}
+    .footerContainer
+    {
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+    }
+    .social-connections
+    {
+        margin-bottom: 80px;
+    }
+      
+      #bars
+      {
+          display: block;
+          text-align:end;
+          margin-right: 20px;
+          font-size: 30px;
+      }
+    
+}

@@ -1,0 +1,520 @@
+/* This media query is only for Home Screen page */
+
+
+/* This is for Laptop or Desktop Media Query */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    background-color: grey;
+  }
+  .navigation {
+    display: block;
+  }
+  #hamburger {
+    display: none;
+  }
+  
+}
+
+/* Large Mobile phones Media Query  */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navigation {
+    display: none;
+    height: auto;
+  }
+
+  .navigation nav {
+    padding: 30px 0;
+    text-align: center;
+  }
+  #hamburger {
+    display: block;
+    margin-left: 91%;
+    margin-top: 10px;
+  }
+  #cross {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+  .infoContainer {
+    background-color: rgb(67, 7, 7);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .devInfo {
+    display: block;
+    margin: 10px auto;
+    position: relative;
+  }
+
+  .hello {
+    margin: 60px 15px;
+    display: block;
+  }
+  .hello_intro {
+    font-size: 40px;
+    font-weight: bold;
+    color: grey;
+  }
+  .hello_name {
+    font-size: 25px;
+    font-weight: bold;
+    color: darkblue;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .hello_about {
+    font-size: 22px;
+    color: white;
+  }
+  .hello_moreAbout {
+    font-size: 30px;
+  }
+
+  .devPic img {
+    width: 100%;
+    height: auto;
+    padding: 20% 25%;
+    position: absolute;
+    top: 22%;
+    margin-left: -56%;
+  }
+  .info_btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 92% 10%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+  .navigation {
+    display: none;
+    height: 300px;
+  }
+
+  .navigation nav {
+    padding: 30px 0;
+    text-align: center;
+  }
+  #hamburger {
+    display: block;
+    margin-left: 92%;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  #ham{
+    background-color: white;
+  }
+  #cross {
+    display: none;
+    margin-left: 8px;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+  }
+  .infoContainer {
+    /* background-color: lightcyan; */
+    background-image: url("https://i.gifer.com/BXe0.gif");
+    /* background-position: center; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hello {
+    margin: 150px 20px;
+  }
+  .hello_intro {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+  .hello_name {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .hello_about {
+    font-size: 23px;
+    color: white;
+  }
+  .hello_moreAbout {
+    font-size: 26px;
+    color: beige;
+  }
+
+  .devPic{
+    width: 600px;
+    height: 60vh;
+    background-color: rgb(46, 8, 8);
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    position: absolute;
+    margin-top: -90%;
+    margin-left: 5%;
+    margin-bottom: 60px;
+
+}
+  .devPic img {
+    width: 560px;
+    height: 50vh;
+    margin-left: 20px;
+    margin-top: 33px;
+    border-radius: 60px;
+  }
+
+
+  .info_btns {
+    display: flex;
+    flex-direction: column;
+    margin: 92% 25%;
+  }
+
+  .info_btns button {
+    width: 350px;
+    height: 60px;
+  }
+  .social_platforms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 510px;
+    background-color: #e2eaf1;
+    margin-top: -66%;
+}
+.social_platforms p{
+  color: black;
+  font-size: 26px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 10px;
+  margin-top: -7%;
+  line-height: 2;
+}
+.social_platforms p:hover{
+    color: rgb(1, 28, 1);
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+.social_icons{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.fa-brands{
+  font-size: 80px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: 90px;
+}
+.fa-brands:hover{
+    color:bisque;
+}
+}
+
+/* Small and Medium Mobile phones Media Query */
+
+@media (max-width: 425px) {
+  .navigation {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background-color: rgb(60 72 83);
+
+  }
+
+  .navigation nav {
+    text-align: center;
+  }
+
+  #active{
+    font-size: 35px;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .navigation nav li {
+    list-style: none;
+    padding: 38px 20px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .navigation nav li a{
+    color: white;
+  }
+  #hamburger {
+    display: block;
+  }
+  #cross {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 350px;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+  }
+  .infoContainer {
+    background-color: darkgrey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+  }
+
+  .hello {
+    display: block;
+    margin: 80px 10px;
+  }
+  .hello_intro {
+    font-size: 35px;
+    color: black;
+  }
+  .hello_name {
+    font-size: 30px;
+  }
+  .hello_about {
+    font-size: 28px;
+    color: black;
+
+  }
+  .hello_moreAbout {
+    font-size: 22px;
+    color: #080e11;
+  }
+
+  .devPic{
+    width: 400px;
+    height: 60vh;
+    background-color: #555;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position: absolute;
+    margin-top: -90%;
+    margin-left: 4%;
+    margin-bottom: 60px;
+
+}
+  .devPic img {
+    width: 370px;
+    height: 44vh;
+    margin-left: 10px;
+    margin-top: 40px;
+    border-radius: 40px;
+  }
+
+
+  .info_btns {
+    display: flex;
+    flex-direction: column;
+    margin: 90% 8%;
+  }
+
+  .info_btns button {
+    width: 300px;
+    height: 70px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .social_platforms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-color: #838a90;
+    margin-top: -100%;
+}
+.social_platforms p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    margin-top: -45%;
+}
+.social_platforms p:hover{
+    color: darkgreen;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+.social_icons{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.fa-brands{
+    font-size: 45px;
+    cursor: pointer;
+    margin-top: 25px
+}
+.fa-brands:hover{
+    color: brown;
+}
+}
+
+
+/* Media Query for small devices (max-width = 320px) */
+
+@media (max-width: 320px) {
+  .navigation {
+    display: none;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: lightslategray;
+  }
+
+  .navigation nav {
+    text-align: center;
+  }
+
+  #active{
+    font-size: 30px;
+    color: darkgreen;
+    font-family: monospace;
+  }
+  .navigation nav li {
+    list-style: none;
+    padding: 30px 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .navigation nav li a{
+    color: white;
+  }
+  #hamburger {
+    display: block;
+  }
+  #cross {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 240px;
+  }
+
+  .main {
+    width: 100vw;
+    height: 100vh;
+  }
+  .infoContainer {
+    background-color: darkgrey;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hello {
+    display: block;
+    margin: 90px 15px;
+  }
+  .hello_intro {
+    font-size: 35px;
+    color: black;
+  }
+  .hello_name {
+    font-size: 30px;
+  }
+  .hello_about {
+    font-size: 28px;
+    color: black;
+
+  }
+  .hello_moreAbout {
+    font-size: 25px;
+    color: #080e11;
+  }
+  .devPic{
+    width: 300px;
+    height: 60vh;
+    background-color: #555;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position: absolute;
+    margin-top: -100%;
+    margin-left: 5%;
+
+}
+  .devPic img {
+    width: 270px;
+    height: 45vh;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 40px;
+    border-radius: 36px;
+  }
+
+  .info_btns {
+    display: flex;
+    flex-direction: column;
+    margin: 400px 5%;
+  }
+
+  .info_btns button {
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .social_platforms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-color: #838a90;
+    margin-top: -100%;
+}
+.social_platforms p{
+    color: black;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    margin-top: -45%;
+}
+.social_platforms p:hover{
+    color: darkgreen;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+.social_icons{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.fa-brands{
+    font-size: 45px;
+    cursor: pointer;
+    margin-top: 25px
+}
+.fa-brands:hover{
+    color: brown;
+}
+}
