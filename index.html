@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index_phone.css">
+    <script src="https://kit.fontawesome.com/f771057305.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="active"> Home</a></li>
+                    <li><a href="intro.html">My Intro </a></li>
+                    <li><a href="services.html">Services </a> </li>
+                    <li><a href="blog.html"> Blog</a> </li>
+                    <li><a href="contact.html"> Contact Me </a> </li>
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+
+            <div id="hamburger">
+                <img id="ham" onclick="showNav()" src="https://icon-library.com/images/menu-bars-icon/menu-bars-icon-7.jpg" alt="">
+                <img id="cross" onclick="hideNav()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KRxxoOlx_uDpp97M_ZwdyyEvW0rk1VdLv-MwwSY&s" alt="cross_img">
+            </div>
+
+            <div class="infoContainer">
+
+                <div class="devInfo">
+                    <div class="hello">
+                        <p class="hello_intro"> Hi, I am </p>
+                        <p class="hello_name"> Muhammad Mukarram Asad</p>
+                        <p class="hello_about"> A <span id="hello_about_def"></span></p>
+                        <p class="hello_moreAbout">
+                            Never conclude a person by his present status because time has the great power
+                            to change a useless coal into a valuable diamond.
+                        </p>
+                        <div class="info_btns">
+                            <a href="Mukarram Asad Resume.pdf" target="_blank"> <button> Download CV </button></a>
+                            <a href="contact.html"> <button> Contact Me</button> </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="devPic">
+                    <!-- <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwbW9kZWx8ZW58MHx8MHx8&w=1000&q=80" alt="random_pic"> -->
+                    <img src="swat pic.jpg" alt="mukii bhai image">
+                </div>
+            </div>
+            <div class="social_platforms">
+                <p> Social media platforms can also use in a good way instead of wasting time.<br />
+                    Like we can connect on these platforms for the sharing of technical stuff,<br />
+                    upto date informations. So you can easily follow me and remain in touch on <br />
+                    the below social media platforms.
+                </p>
+
+                <div class="social_icons">
+                   <a href="https://www.linkedin.com/in/mukarram-asad-a10a21218?lipi" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                   <a href="http://github.com/Muhammad-Mukarram-Asad" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                   <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                   <a href="http://instagram.com/mukii_bhai?gshid=ZDdkNTZiNTM=" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

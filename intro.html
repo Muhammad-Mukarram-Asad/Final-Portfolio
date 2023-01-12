@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="intro_phone.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="https://kit.fontawesome.com/f771057305.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- <i class="fa fa-toggle-on" aria-hidden="true" id="toggle_on" style="font-size: 30px; display: none;" onclick="toggle_on()"></i>
+    <i class="fa fa-toggle-off" aria-hidden="true" id="toggle_off" style="font-size: 30px;" onclick="toggle_off()"></i> -->
+
+    <div class="container">
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Home</li></a>
+                    <li><a href="intro.html" id="active">My Intro </a></li>
+                    <li><a href="services.html">Services </a> </li>
+                    <li><a href="blog.html"> Blog</a> </li>
+                    <li><a href="contact.html"> Contact Me </a> </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div id="hamburger">
+                <img id="ham" onclick="showNav()" src="https://icon-library.com/images/menu-bars-icon/menu-bars-icon-7.jpg" alt="">
+                <img id="cross" onclick="hideNav()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KRxxoOlx_uDpp97M_ZwdyyEvW0rk1VdLv-MwwSY&s" alt="cross_img">
+            </div>
+            <div class="introContainer">
+                <div class="intro_info">
+                    <h1> About Me</h1>
+                    <p>I am currently doing bachelor's in Computer Science from the very reputed
+                        university of Pakistan whose name is University of Karachi(UoK). Now I am
+                        in 6th semester of my whole course. I learned different programming languages
+                        during my course. Also learned hardware related subjects which are as follows:
+                    </p>
+                    <ol>
+                        <li> Digital Logic Design</li>
+                        <li> Microprocessor</li>
+                        <li> Computer Architecture & Organization</li>
+                        <li>Electronics</li>
+                    </ol>
+                    <p>
+                        In the start of the year 2022, I joined Saylani Mass IT Training Program in which I am
+                        learning and doing Web and App Development. The skills which I learned during the course which
+                        is still going on
+                        are as follows:
+                    </p>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript & ES6</li>
+                        <li>Github</li>
+                        <li>BootStrap</li>
+                        <li>React</li>
+                        <li>React Native</li>
+                    </ol>
+
+                    </p>
+                </div>
+
+                <div class="skills_Container">
+                    <h1> My Skills Report </h1>
+                    <div class="skill_progress">
+                        <li>HTML</li>
+                        <div id="html">
+                            <progress value="100" max="100"></progress>
+                        </div>
+
+                    </div>
+
+                    <div class="skill_progress">
+                        <li>CSS</li>
+                        <div id="css">
+                            <progress value="90" max="100"></progress>
+
+                        </div>
+                    </div>
+
+                    <div class="skill_progress">
+                        <li>BootStrap</li>
+                        <div id="bootstrap">
+                            <progress value="80" max="100"></progress>
+
+                        </div>
+                    </div>
+
+                    <div class="skill_progress">
+                        <li>JavaScript & ES6</li>
+                        <div id="js">
+                            <progress value="90" max="100"></progress>
+
+                        </div>
+                    </div>
+
+                    <div class="skill_progress">
+                        <li>Java</li>
+                        <div id="java">
+                            <progress value="50" max="100"></progress>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill_progress">
+                        <li>Python</li>
+                        <div id="Python">
+                            <progress value="80" max="100"></progress>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill_progress">
+                        <li>Problem Solver</li>
+                        <div id="Ps">
+                            <progress value="70" max="100"></progress>
+                        </div>
+                    </div>
+
+                    <!-- <div class="skill_progress">
+                                <li>React</li> 
+                                <div id="Ps">
+                                    <progress value="60" max="100"></progress>
+                                </div>
+                            </div>
+
+                            <div class="skill_progress">
+                                <li>React Native</li> 
+                                <div id="Ps">
+                                    <progress value="10" max="100"></progress>
+                                </div>
+                            </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
