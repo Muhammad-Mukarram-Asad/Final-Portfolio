@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="technical documentation.css">
+</head>
+
+<body>
+    <div class="headings">
+        <h1>This is the technical documentation page.</h1>
+        <h2> A copy or clone of FreeCodeCamp Project.</h2>
+        <h3> Lets get started.</h3>
+    </div>
+
+    <!-- navigation code below: -->
+
+    <div class="fullContainer">
+        <!-- <div id="bars" onclick="responsive()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <p id="cross_sign" onclick="removing()">&#10006;</p>
+    </div> -->
+
+        <div class="navigation">
+            <div class="container">
+                <div class="row col-12">
+
+                    <nav id="navbar">
+                        <ul>
+                            <header id="nav-h1">JS Documentation</header>
+
+                            <li> <a href="#Introduction" class="nav-link">Introduction </a> </li>
+
+                            <li> <a href="#Pre-Requisites_For_JS" class="nav-link"> Pre-Requisites For JS </a> </li>
+
+                            <li> <a href="#JavaScript_&_Java" class="nav-link"> JavaScript & Java </a> </li>
+
+                            <li> <a href="#Hello_World_Program" class="nav-link">Hello World Program </a> </li>
+
+                            <li> <a href="#Variables" class="nav-link"> Variables</a> </li>
+
+                            <li> <a href="#Declaring_Variables_in_JS" class="nav-link"> Declaring Variables in JS </a>
+                            </li>
+
+                            <li> <a href="#Variables_Scope" class="nav-link">Variables Scope </a> </li>
+
+                            <li> <a href="#Conditional_Statements_in_JS" class="nav-link">Conditional Statements in
+                                    JS</a> </li>
+
+                            <li> <a href="#Switch_Statement_in_JS" class="nav-link"> Switch Statement in JS </a> </li>
+
+                            <li> <a href="#While_Loop_in_JS" class="nav-link"> While loop in JS</a> </li>
+
+                            <li> <a href="#Functions_in_JS" class="nav-link"> Functions in JS </a> </li>
+
+                            <li> <a href="#Developer_Details" class="nav-link"> Developer Details </a> </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="right_side">
+            <div class="container">
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Introduction">
+                            <header id="introduction">Introduction</header>
+                            <p>
+                                JavaScript is a text-based programming language used both on the client-side and
+                                server-side that allows you to make web pages interactive. Where HTML and CSS are
+                                languages that give structure and style to web pages, JavaScript gives web pages
+                                interactive elements that engage a user. <br>
+                                JavaScript contains a standard library of objects, such as Array, Date, and Math, and a
+                                core set of language elements such as operators, <br> control structures, and
+                                statements. Core JavaScript can be extended for a variety of purposes by supplementing
+                                it with additional objects; <br> for example: <br>
+                            <ul>
+                                <li>
+                                    Client-side JavaScript extends the core language by supplying objects to control a
+                                    browser and its Document Object Model (DOM). <br> For example, client-side
+                                    extensions allow an application to place elements on an HTML form and respond to
+                                    user events such as mouse clicks, <br> form input, and page navigation.
+                                </li>
+
+                                <li>
+                                    Server-side JavaScript extends the core language by supplying objects relevant to
+                                    running JavaScript on a server. <br> For example, server-side extensions allow an
+                                    application to communicate with a database, provide continuity of information from
+                                    one invocation to another of the application, <br> or perform file manipulations on
+                                    a server.
+                                </li>
+                            </ul>
+                            </p>
+                        </section>
+                    </main>
+                </div>
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Pre-Requisites_For_JS">
+                            <header id="Prerequisites">Pre-Requisites For JS</header>
+                            <p> A person should have a knowledge of the following basic things before he starts learning
+                                JS:</p>
+                            <ol>
+                                <li>
+                                    A general understanding of the Internet and the World Wide Web (WWW).
+                                </li>
+                                <li>
+                                    Knowledge of Hyper Text Markup Language(HTML). A very important foundation of web
+                                    development.
+                                </li>
+
+                                <li>
+                                    Some programming experience. If you are new to programming, try one of the tutorials
+                                    linked on the main page about JavaScript.
+
+                                </li>
+                            </ol>
+                        </section>
+                    </main>
+                </div>
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="JavaScript_&_Java">
+                            <header id="JS_and_Java">JavaScript & Java</header>
+                            <p>
+                                JavaScript and Java are similar in some ways but fundamentally different in some others.
+                                The JavaScript language resembles Java but does not have Java's static typing and strong
+                                type checking. <br> JavaScript follows most Java expression syntax, naming conventions
+                                and basic control-flow constructs <br> which was the reason why it was renamed from
+                                LiveScript to JavaScript. <br>
+                                In contrast to Java's compile-time system of classes built by declarations, JavaScript
+                                supports a runtime system based on a small number of data types representing numeric,
+                                Boolean, and string values. JavaScript has a prototype-based object model instead of the
+                                more common class-based object model. <br> The prototype-based model provides dynamic
+                                inheritance; that is, what is inherited can vary for individual objects. <br> JavaScript
+                                also supports functions without any special declarative requirements. Functions can be
+                                properties of objects, executing as loosely typed methods. <br>
+                                avaScript is a very free-form language compared to Java. You do not have to declare all
+                                variables, classes, and methods. You do not have to be concerned with whether methods
+                                are public, private, or protected, <br> and you do not have to implement interfaces.
+                                Variables, parameters, <br> and function return types are not explicitly typed. <br>
+                            </p>
+                        </section>
+                    </main>
+                </div>
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Hello_World_Program">
+                            <header id="helloWorld">Hello World Program</header>
+                            <p>
+                                Writing code in javaScript is very easy. like we can easily write a code for <br>
+                                printing <b>Hello World</b> in JS. The <strong>syntax</strong> is given below: <br>
+                            </p>
+                            <code>
+                        function Name(name)
+                        {
+                            alert(" The name of the person is --> "+ name);
+                        }
+
+                        Name("Mukarram Asad");
+                    </code>
+                        </section>
+                    </main>
+                </div>
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Variables">
+                            <header id="Variables">Variables</header>
+                            <p>
+                                You use variables as symbolic names for values in your application. The names of
+                                variables, called identifiers, conform to certain rules. <br>
+                                A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($);
+                                subsequent characters can also be digits (0-9). <br>
+                                Because JavaScript is case sensitive, letters include the characters "A" through "Z"
+                                (uppercase) and the characters "a" through "z" (lowercase).
+                                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also
+                                use the Unicode escape sequences as characters in identifiers.
+                            </p>
+                        </section>
+                    </main>
+                </div>
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Declaring_Variables_in_JS">
+                            <header id="Declaring_variables">Declaring Variables in JS</header>
+                            <p>
+                                There are about 5 data types for variables in javaScript, anmely:
+                            <ol>
+                                <li> Number</li>
+                                <li>String</li>
+                                <li> Boolean</li>
+                                <li>Undefined</li>
+                                <li>Object</li>
+                            </ol>
+                            we can easily declare a variable in javaScript as follows:
+                            </p>
+                            <code>
+                        var a = 10; // Number data type.
+                        var b = '120'; // String data type.
+                        var c = true; // Boolean data type.
+                        var d = undefined; // undefined data type.
+                    </code>
+                        </section>
+                    </main>
+                </div>
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Variables_Scope">
+                            <header id="Variables_scope">Variables Scope</header>
+                            <p>
+                                The scope of the variables in javaScript is categorized in two types:
+                            <ol>
+                                <li> Global Scope Variables.</li>
+                                <li> Local Scope Variables.</li>
+                            </ol>
+                            </p>
+                            <p>
+                                The variables used <b>inside a function </b> are known as Local Scope Variables. <br>
+                                While the variables which are <b>declare in main code </b> are known as Global
+                                Scope variables.
+                            </p>
+                            <code>
+                        var a = 10;
+                        function  foo()
+                        {
+                            var b;
+                            a = 12;
+                            b = 5;
+                            console.log(a + ' ' + b);
+                        }
+                    </code>
+                        </section>
+                    </main>
+                </div>
+
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Conditional_Statements_in_JS">
+                            <header id="if_else">Conditional Statements in JS</header>
+                            <p>
+                                Use the if statement to execute a statement if a logical condition is true. Use the
+                                optional else clause to execute a statement <br>
+                                if the condition is false. An if statement looks as follows:
+                            </p>
+                            <code>
+                        if (condition)
+                        { 
+                            statement_1; 
+                        } 
+                         else
+                         {
+                             statement_2; 
+                        }
+                    </code>
+                            <p> The example of if-else staement in javaScript is as follows: </p>
+                            <code>
+                        var a = 10;
+                        if(a > 5)
+                        {
+                            alert("You Win");
+                        }
+                        else
+                        {
+                            alert("You Lose");
+                        }
+                    </code>
+                        </section>
+                    </main>
+                </div>
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Switch_Statement_in_JS">
+                            <header id="Switch">Switch Statement in JS</header>
+                            <p>
+                                Switch statement is simply an alternative of multiple if-else statements. It is very
+                                common in finding days, month <br>
+                                years etc. The code structure of switch statement is given as follows: <br>
+                            </p>
+                            <code>
+                        switch(element Name)
+                        { 
+                            case (matching part) 
+                            {
+                                // some code
+                            }
+                    
+                            case (matching part) 
+                            {
+                                // some code
+                            }
+
+                            default
+                            {
+                                // Some code over here too.
+                            }
+                        }
+
+                    </code>
+                            <p> The example of if-else staement in javaScript is as follows: </p>
+                            <code>
+                        var a = prompt("Enter your favourite number:");
+                        switch(a)
+                        {
+                           case('1')
+                           {
+                              alert(" You are so nice.")
+                           }
+                        
+                           case('2')
+                           {
+                              alert(" You are so intelligent.")
+                           }
+
+                           case('3')
+                           {
+                              alert(" You are so strong.")
+                           }
+
+                           default
+                           {
+                             alert("You are all rounder");
+                           }
+                        }
+                    </code>
+                        </section>
+                    </main>
+                </div>
+
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="While_Loop_in_JS">
+                            <header id="While_Loop">While Loop in JS</header>
+                            <p>
+                                A while statement executes its statements as long as a specified condition evaluates to
+                                true. A while statement looks as follows: <br>
+                                <code>
+                            while (condition) statement
+                        </code>
+                                If the condition becomes false, statement within the loop stops executing and control
+                                passes to the statement following the loop. <br>
+                                The condition test occurs before statement in the loop is executed. If the condition
+                                returns true, statement is executed and the condition is tested again. <br>
+                                If the condition returns false, execution stops and control is passed to the statement
+                                following while.
+                                To execute multiple statements, use a block statement ({ ... }) to group those
+                                statements.
+
+
+                            </p>
+
+                        </section>
+                    </main>
+                </div>
+
+                <div class="row">
+                    <main id="main-doc" class="col-12">
+                        <section class="main-section" id="Functions_in_JS">
+                            <header id="function"> Functions in JS</header>
+                            <p>
+                                A function definition (also called a function declaration, or function statement)
+                                consists of the function keyword, followed by: <br>
+                            <ul>
+                                <li>
+                                    The name of the function.
+                                </li>
+                                <li>
+                                    A list of arguments to the function, enclosed in parentheses and separated by
+                                    commas.
+                                </li>
+                                <li>
+                                    The JavaScript statements that define the function, enclosed in curly brackets, { }.
+                                </li>
+                            </ul>
+                            </p>
+
+                        </section>
+                    </main>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <section id="Developer_Details" class="main-section">
+            <header id="footer_header">Developer Details</header>
+            <br> <br>
+            <div class="footerContainer">
+                <div class="first">
+                <summary>
+                    <details>
+                        Mukarram Institute of Technology <sub>MIT</sub>
+                    </details>
+                </summary>
+                <p> Future Software House, <span>In Sha Allah</span>.</p>
+                <h5> Web Development Software House. </h5>
+            </div>
+
+            <div class="social-connections">
+                <h2> Social Networking Sites</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+            <div class="last">
+                <img src="https://img.freepik.com/free-vector/letter-m-monogram-logo-with-golden-crown_1017-26412.jpg?size=338&ext=jpg&ga=GA1.2.1595365363.1661552345"
+                    alt="M-logo-image" width="200px" height="100px">
+                <h4>Copyright&copy; All rights reserved.</h4>
+            </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- JS Code: -->
+
+    <script>
+        var bar_item = document.getElementById('bars');
+        var ul_list = document.getElementById('navbar');
+        // var intro_section = document.getElementById('intro_section');
+        var cross = document.getElementById('cross_sign');
+
+
+        function responsive()
+        {
+            if(ul_list.style.display == "block")
+            {
+                ul_list.style.display = "none";
+                bar_item.style.display = "block";
+            }
+            else
+            {
+                bar_item.style.display = "none";
+                ul_list.style.display = "block";
+                ul_list.className += " bar_on_click";
+                cross.style.display = "block";
+            }
+        }
+
+        function removing()
+        {
+            ul_list.style.display = "none";
+            bar_item.style.display = "block";
+            cross.style.display = "none";
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

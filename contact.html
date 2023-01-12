@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+ <link rel="stylesheet" href="contact phone.css">
+</head>
+
+<body>
+  <div class="contact_navigation">
+    <nav>
+      <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="intro.html">My Intro </a></li>
+        <li><a href="services.html">Services </a> </li>
+        <li><a href="blog.html"> Blog</a> </li>
+        <li><a href="contact.html" id="contact_active"> Contact Me </a> </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="main">
+      <div id="hamburger">
+          <img id="ham" onclick="showNavContact()" src="https://icon-library.com/images/menu-bars-icon/menu-bars-icon-7.jpg" alt="">
+          <img id="cross" onclick="hideNavContact()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KRxxoOlx_uDpp97M_ZwdyyEvW0rk1VdLv-MwwSY&s" alt="cross_img">
+      </div>
+      <div class="contactForm">
+        <h1>Contact me related to work or general queries</h1>
+        <form>
+
+          <div class="mb-3 form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" class="form-control" id="email_input" aria-describedby="emailHelp"
+              placeholder="Enter Name here">
+          </div>
+
+          <div class="mb-3 form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email_input" aria-describedby="emailHelp"
+              placeholder="Enter email address here">
+            <p id="emailHelp" class="form-text ">We'll never share your email with anyone else.</p>
+          </div>
+
+          <div class="mb-3 form-group">
+            <label for="exampleInputPassword1">Enter Your Contact Info Here</label>
+            <input type="phone" class="form-control" id="password_input" placeholder="Enter contact number here">
+          </div>
+
+          <div class="mb-3" id="form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox_input">
+            <label class="form-check-label" for="checkbox_input"> Let do it together</label>
+          </div>
+
+          <div class="mb-3 form-group">
+            <label for="exampleInputPassword1" id="textarea_label">Enter Your Query Here</label>
+            <textarea id="textarea" cols="50" rows="10"></textarea>
+          </div>
+
+
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
