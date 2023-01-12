@@ -10,6 +10,7 @@
       position: absolute;
       z-index: 1;
       width: 100%;
+      background-color: blue;
     }
   
     .navigation nav {
@@ -18,7 +19,7 @@
   
     #active{
       font-size: 30px;
-      color: darkgray;
+      color: black;
       font-family: monospace;
     }
     .navigation nav li {
@@ -28,30 +29,31 @@
       cursor: pointer;
     }
     .navigation nav li a{
-      color: grey;
+      color: white;
     }
     #hamburger {
-      display: block;
-      background-color: white;
-      width: 100%;
-      height: 50px;
-    }
+        display: block;
+        width: 100%;
+        height: 50px;
+      }
+    
     #ham, #cross{
         width: 60px;
         height: 60px;
-        /* margin-top: 5px; */
+        background-color: white;
         mix-blend-mode: multiply;
+        margin-left: 0;
     }
     #cross {
       display: none;
       position: absolute;
       z-index: 1;
       margin-top: 2px;
-      margin-left: 260px;
+      margin-left: 270px;
     }
 
     .introContainer{
-        width: 100%;
+        width: 111%;
         height: max-content;
         display: flex;
         flex-direction: column;
@@ -62,9 +64,8 @@
     }
     .intro_info h1
 {
-    color: blue;
+    color: aliceblue;
     text-decoration: underline;
-    text-decoration-color: white;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding-top: 10px;
@@ -231,7 +232,7 @@
         margin-left: 370px;
       }
       .introContainer{
-        width: 100%;
+        width: 111%;
         height: max-content;
         display: flex;
         flex-direction: column;
@@ -253,7 +254,7 @@
 }
 .intro_info p
 {
-    color: black;
+    color: white;
     font-style: italic;
     font-size: 28px;
     font-weight: bolder;
@@ -261,7 +262,7 @@
 }
 .intro_info p:hover
 {
-    color: white;
+    color: darkblue;
     cursor: pointer;
     font-size: 28px;
 }
@@ -344,6 +345,187 @@
 .skill_progress li
 {
     font-size: 28px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    list-style: square;
+    list-style-position: inside;
+}
+
+.skill_progress li:hover
+{
+    color: black;
+    background-color: white;
+    list-style: none;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+}
+
+@media (min-width: 426px) and (max-width: 768px)
+{
+    .navigation {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        background-color: antiquewhite;
+      }
+    
+      .navigation nav {
+        text-align: center;
+      }
+    
+      #active{
+        font-size: 30px;
+        color: grey;
+        font-family: monospace;
+      }
+      .navigation nav li {
+        list-style: none;
+        padding: 35px 18px;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .navigation nav li a{
+        color: black;
+      }
+      #hamburger {
+        display: block;
+        width: 100%;
+        height: 50px;
+      }
+
+      #ham, #cross{
+          width: 100px;
+          height: 100px;
+          margin-top: 10px;
+          background-color: white;
+          mix-blend-mode: multiply;
+      }
+      #cross {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        margin-top: -12px;
+        margin-left: 90%;
+      }
+      .introContainer{
+        width: 111%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   
+    }
+    .intro_info h1
+{
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    margin-top: 70px;
+   
+}
+.intro_info p
+{
+    color: white;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 20px;
+}
+.intro_info p:hover
+{
+    color: darkblue;
+    cursor: pointer;
+    font-size: 35px;
+}
+.intro_info li
+{
+    font-size: 30px;
+    color: blue;
+    background-color: whitesmoke;
+    font-style: italic;
+    font-weight: bold;
+    list-style-position: inside;
+    text-align: center;
+    margin: 15px 40px;
+    border-radius: 15px;
+}
+.intro_info li:hover
+{
+    color: white;
+   background-color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+.skills_Container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.skills_Container h1
+{
+    color: white;
+    background-color: black;
+    width: 250px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+.skills_Container h1:hover
+{
+    width: 300px;
+    color: red;
+    background-color: gray;
+    height: 45px;
+    text-indent: 8px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.skill_progress
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+
+}
+
+
+#html, #css, #js, #bootstrap, #java, #Python, #Ps
+{
+    width: 300px;
+    height: 30px;
+    border: 2px solid rgb(21, 17, 17);
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-left: 2px;
+}
+#html, #css, #js, #bootstrap, #java, #Python, #Ps progress
+{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+
+.skill_progress li
+{
+    font-size: 35px;
     color: white;
     font-family:'Times New Roman', Times, serif;
     font-weight: bolder;

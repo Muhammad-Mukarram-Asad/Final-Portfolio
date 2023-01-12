@@ -308,6 +308,8 @@ html
 }
 .contactForm
 {
+    /* background-image: url("https://media.istockphoto.com/photos/the-perfect-setting-to-complete-work-picture-id1251629816?s=2048x2048"); */
+    /* background-image: url("https://img.freepik.com/premium-photo/contact-us-customer-support-hotline-people-connect-call-customer-support-email-address-live-chat-internet-wifi_36325-3415.jpg?w=2000"); */
     background-image: url("https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?b=1&s=170667a&w=0&k=20&c=2sJEN1Hhg6heUi1ZxKs6pJDwcyLYXPc4pUGd3hEjOjE=");
     background-size: cover;
     background-position: center;
@@ -522,6 +524,8 @@ span
     margin: 10px 0;
 }
 .blogItem li:hover{
+    /* color: #DEC0A0;
+    background-color: #40382F; */
     color: #40382F;
     background-color: #DEC0A0;
     cursor: pointer;
@@ -534,7 +538,7 @@ span
 #span_p
 {
     color: black;
-    font-size: 32px;
+    font-size: 30px;
     margin-top: -1%;
     text-align: center;
 }
@@ -542,9 +546,9 @@ span
 #slider_h1{
     color: black;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: dashed;
     font-style: italic;
-	text-align: center;
+    text-align: center;
 }
 
 .image_slider{
@@ -643,7 +647,7 @@ span
 }
 #blog_btn:hover
 {
-   border-radius: 20px;
+    border-radius: 20px;
     text-indent: 10px;
     color: white;
     background-color: brown;
@@ -657,7 +661,9 @@ span
 {
     width: 100%;
     height: 250vh;
+    /* background-image: url("https://us.123rf.com/450wm/peshkov/peshkov1506/peshkov150600008/41023430-blank-black-diary-and-accessories.jpg?ver=6"); */
     background-image: url("intro\ bg.jpg");
+    /* background-image: url("/intro\ bg\ 1.jpg"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
