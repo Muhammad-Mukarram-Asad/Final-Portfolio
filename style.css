@@ -173,8 +173,12 @@ html
 {
     font-size: 22px;
     margin-top: 20px;
-    color: blueviolet;
+    color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
+}
+#quote_p{
+    font-size: 22px;
+    color: darkblue;
 }
 .devPic{
     width: 400px;

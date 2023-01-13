@@ -1,29 +1,167 @@
 @media (max-width: 320px) {
   .project_navigation {
     display: none;
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: auto;
-        background-color: white;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
   }
   #hamburger {
     display: block;
     width: 100%;
-    height: 50px;
+    height: 60px;
+    background-color: grey;
   }
   #ham,
   #cross {
     width: 60px;
     height: 60px;
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: white;
     mix-blend-mode: multiply;
   }
   #cross {
     display: none;
     position: absolute;
+    z-index: 2;
+    margin-top: -8px;
+    margin-left: -11px;
+  }
+  .project_navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-evenly;
+  }
+
+  .project_navigation ul li {
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-right: 20px;
+    list-style: none;
+  }
+
+  .project_navigation ul li a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  #active{
+    color: white;
+  }
+
+  .project_navigation ul li a:hover {
+    color: blue;
+    background-color: white;
+    text-decoration: underline;
+  }
+
+  .projectsContainer{
+    width: 320px;
+    height: auto;
+  }
+  .projectsContainer h1 {
+    margin-top: 80px;
+    font-family: monospace;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+    width: 320px;
+    height: auto;
+  }
+  .box {
+    width: 260px;
+    height: 320px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+  .box:hover {
+    background-color: white;
+  }
+  .box img {
+    width: 255px;
+    height: 250px;
+    border-radius: 20px;
+}
+  .box p {
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .box p:hover {
+    color: blue;
+    text-decoration: wavy;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  #services_p {
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  #services_ol li {
+    font-size: 20px;
+    margin: 15px;
+    color: rgb(3, 37, 3);
+    text-align: center;
+    list-style-position: inside;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #services_ol li:hover {
+    color: green;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #services_p span {
+    color: red;
+    font-size: 18px;
+  }
+}
+
+/* Small and Medium Devices CSS Code: */
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .project_navigation {
+    display: none;
+    position: absolute;
     z-index: 1;
+    width: 100%;
+    height: auto;
+    background-color: grey;
+  }
+  #hamburger {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: grey;
+  }
+  #active{
+    color: blue;
+  }
+  #ham,
+  #cross {
+    width: 60px;
+    height: 60px;
+    margin-top: 6px;
+    mix-blend-mode: multiply;
+  }
+  #cross {
+    display: none;
+    position: absolute;
+    z-index: 2;
     margin-top: 2px;
     margin-left: 370px;
   }
@@ -48,13 +186,14 @@
   }
 
   .project_navigation ul li a:hover {
-    color: purple;
-    background-color: white;
+    color: white;
+    background-color: black;
     text-decoration: underline;
   }
   .projectsContainer h1 {
     margin-top: 80px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     text-transform: capitalize;
     text-align: center;
   }
@@ -74,7 +213,7 @@
     border-radius: 20px;
     margin-top: 20px;
   }
-  .box:hover{
+  .box:hover {
     background-color: white;
   }
   .box img {
@@ -97,7 +236,7 @@
   }
   #services_p {
     color: black;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 24px;
     margin-left: 30px;
   }
