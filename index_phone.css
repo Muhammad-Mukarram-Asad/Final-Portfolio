@@ -97,9 +97,9 @@
     display: none;
     position: absolute;
     z-index: 1;
-    width: 100%;
+    width: 103%;
     height: auto;
-    background-color: antiquewhite;
+    background-color: white;
   }
 
   .navigation nav {
@@ -128,9 +128,9 @@
   }
 
   #ham, #cross{
-      width: 100px;
-      height: 100px;
-      margin-top: 10px;
+    width: 70px;
+    height: 70px;
+      margin: 30px 0;
       background-color: white;
       mix-blend-mode: multiply;
   }
@@ -148,8 +148,8 @@
   }
   .infoContainer {
     background-image: url("https://i.gifer.com/BXe0.gif");
-    height: 100%;
-    width: 100%;
+    width: 103%;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +157,7 @@
   }
 
   .hello {
-    margin: 150px 20px;
+    margin: 105px 20px;
   }
   .hello_intro {
     font-size: 40px;
@@ -175,53 +175,56 @@
     color: white;
   }
   .hello_moreAbout {
-    font-size: 26px;
+    font-size: 30px;
     color: beige;
   }
 
   .devPic{
-    width: 700px;
-    height: 70vh;
-    border-top-right-radius: 36%;
-    border-bottom-left-radius: 36%;
+    width: 430px;
+    height: 55vh;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
     position: absolute;
-    margin-top: -90%;
-    margin-left: 5%;
-    margin-bottom: 25px;
-
+    margin-top: -100%;
+    margin-left: 4%;
+    margin-bottom: 40px;
 }
   .devPic img {
-    width: 600px;
-    height: 58vh;
-    margin-left: 46px;
-    margin-top: 33px;
-    border-radius: 50px;
+    width: 420px;
+    height: 50vh;
+    margin-left: 4px;
+    margin-top: 14px;
+    border-radius: 40px;
+
   }
 
 
   .info_btns {
     display: flex;
     flex-direction: column;
-    margin: 92% 25%;
+    margin: 100% 20%;
   }
 
   .info_btns button {
-    width: 400px;
-    height: 80px;
+    width: 350px;
+    height: 60px;
+    margin: 30px -50px;
+    cursor: pointer;
+    font-size: 30px;
   }
   .social_platforms{
-    width: 100%;
-    height: 510px;
+    width: 103%;
+    height: 600px;
     background-color: #e2eaf1;
-    margin-top: -66%;
+    margin-top: 0;
 }
 .social_platforms p{
   color: black;
-  font-size: 30px;
+  font-size: 27px;
   font-family: 'Courier New', Courier, monospace;
   margin-left: 10px;
-  margin-top: -5%;
-  line-height: 1.5;
+  margin-top: 0;
+  line-height: 1.1;
   font-style: italic;
   font-weight: bold;
 }
@@ -238,10 +241,10 @@
     height: 50px;
 }
 .fa-brands{
-  font-size: 80px;
+  font-size: 40px;
   cursor: pointer;
   margin-top: 25px;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 .fa-brands:hover{
     color:darkblue;
@@ -359,12 +362,12 @@
   .info_btns {
     display: flex;
     flex-direction: column;
-    margin: 90% 8%;
+    margin: 100% 15%;
   }
 
   .info_btns button {
-    width: 300px;
-    height: 70px;
+    width: 260px;
+    height: 50px;
     font-size: 30px;
     cursor: pointer;
   }
@@ -440,17 +443,21 @@
   #hamburger {
     display: block;
   }
+  #ham{
+    mix-blend-mode: multiply;
+  }
   #cross {
     display: none;
     position: absolute;
     z-index: 1;
-    margin-left: 240px;
+    margin-left: 260px;
+    mix-blend-mode: multiply;
   }
 
   .main {
-    width: 100vw;
-    height: 100vh;
-  }
+    width: 100%;
+    height: auto;
+     }
   .infoContainer {
     background-color: darkgrey;
     width: 100%;
@@ -530,7 +537,7 @@
     margin-top: -45%;
 }
 .social_platforms p:hover{
-    color: darkgreen;
+    color: white;
     font-size: 23px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
@@ -542,9 +549,10 @@
     height: 50px;
 }
 .fa-brands{
-    font-size: 45px;
-    cursor: pointer;
-    margin-top: 25px
+  font-size: 42px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: 30px;
 }
 .fa-brands:hover{
     color: brown;
