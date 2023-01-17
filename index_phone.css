@@ -346,8 +346,8 @@
   }
 
   .devPic{
-    width: 91%;
-    height: 50%;
+    width: 90%;
+    height: 44%;
     background-color: #555;
     border-top-right-radius: 36%;
     border-bottom-left-radius: 36%;
@@ -358,10 +358,10 @@
 
 }
   .devPic img {
-    width: 90%;
+    width: 88%;
     height: 90%;
     margin-left: 6%;
-    margin-top: 5%;
+    margin-top: 3%;
     border-radius: 40px;
   }
 
