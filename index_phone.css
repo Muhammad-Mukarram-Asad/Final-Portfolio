@@ -369,7 +369,7 @@
   .info_btns {
     display: flex;
     flex-direction: column;
-    margin: 100% 15%;
+    margin: 105% 15%;
   }
 
   .info_btns button {
