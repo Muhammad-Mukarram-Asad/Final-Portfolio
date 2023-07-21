@@ -602,9 +602,9 @@ span
     width: 120%;
     height: 500px;  
   }
-  .carousel img {
-    width: 120%;
-    height: 470px;
+  .carousel > img {
+    width: 80%;
+    height: 40%;
     transition: all 0.3s ease;
     border:8px solid white;
   }
